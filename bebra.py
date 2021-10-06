@@ -8,7 +8,6 @@ logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s',
 					)
 
 def start_bot(update: Updater, context: CallbackContext):
-	print(update) 
 	mytext = """Аллейкум Асалам {}
 
 	Аллаху Акбар""".format(update.message.chat.first_name)
