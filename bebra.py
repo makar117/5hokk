@@ -12,6 +12,7 @@ def start_bot(update: Updater, context: CallbackContext):
 	mytext = """Аллейкум Асалам {}
 
 	Аллаху Акбар""".format(update.message.chat.first_name)
+	logging.info('User {} press /start'.format(update.message.chat.username))
 	update.message.reply_text(mytext)
 
 def chat(update: Updater, context: CallbackContext):
